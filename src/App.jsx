@@ -1,12 +1,15 @@
 import { useState } from 'react'
 import './App.css'
+import './style/global.css'
+
+import Hud from './components/Hud/Hud'
 
 function App() {
 
 
   return (
     <>
-      <img src="/public/image/hud.png" alt="" className='teste' />
+    <Hud />
     </>
   )
 }
