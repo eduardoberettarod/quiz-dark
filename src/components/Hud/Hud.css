@@ -1,11 +1,24 @@
-.skull-icon-hud{
+.skull-icon-hud {
   image-rendering: pixelated;
-  width: 175px;
-  height: 175px;
+  width: 96px;
+  height: 96px;
 }
 
-.b{
-  image-rendering:pixelated;
-  width: 100px;
-  width: 100px;
+.health {
+  image-rendering: pixelated;
+  width: 48px;
+  height: 48px;
+}
+
+/* desktop only */
+@media (min-width: 768px) {
+  .skull-icon-hud {
+    width: 155px;
+    height: 155px;
+  }
+
+  .health {
+    width: 85px;
+    height: 85px;
+  }
 }
