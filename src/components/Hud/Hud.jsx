@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Hud.css'
 
-const Hud = () => {
+const Hud = ({ vidas }) => {
+
+
     return (
         <>
-            <div className="d-flex align-items-center justify-content-between mt-3 px-3">
+            <div className="d-flex align-items-center justify-content-between mt-3 px-3 container-hud">
 
                 <img
                     src="/image/skull-circle.png"
@@ -12,10 +14,14 @@ const Hud = () => {
                     className="skull-icon-hud"
                 />
 
-                <div className="d-flex gap-1">
-                    <img src="/image/blood-health.png" className="health" />
-                    <img src="/image/blood-health.png" className="health" />
-                    <img src="/image/blood-health.png" className="health" />
+                <div className="d-flex health-bar align-items-center">
+                    {Array.from({ length: vidas }).map((_, index) =>(
+                        <img
+                        key={index}
+                        src="/image/blood-health.png"
+                        alt='vida'
+                        className="health" />
+                         ))}
                 </div>
 
             </div>

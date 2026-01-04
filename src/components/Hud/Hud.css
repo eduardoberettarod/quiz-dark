@@ -1,3 +1,15 @@
+.container-hud {
+  z-index: 2;
+}
+
+.health-bar {
+  background-color: black;
+  padding: 12px 5px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+
+
 .skull-icon-hud {
   image-rendering: pixelated;
   width: 96px;

@@ -4,6 +4,14 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: 'MinecraftFont';
+    src: url(public/font/minecraft.ttf);
+}
+
 body {
-    background-color: white;
+    background-color: #151515;
+    font-family: 'MinecraftFont';
+    color: #eee;
+    letter-spacing: 1px;
 }
